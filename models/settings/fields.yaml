@@ -4,6 +4,11 @@
 
 fields:
 
+    disqussettings:
+      label: Core settings
+      type: section
+      comment: Core settings for getting disqus running on your site
+    
     disqussite:
       label: Disqus Website short name (located on Settings -> General)
       comment: Will look like *name*.disqus.com
@@ -19,3 +24,49 @@ fields:
       label: Use developer mode
       type: checkbox
       default: false
+      
+    javascript_functions:
+      label: Javascript callbacks for analytics etc.
+      type: section
+      comment: Add the name of your functions that you want to call back on events
+      
+    preData:
+      label: preData
+      comment: Before data collection
+      
+    preInit:
+      label: preInit
+      comment: Before initalization
+      
+    onInit:
+      label: onInit
+      comment: When initalized
+      
+    afterRender:
+      label: afterRender
+      comment: After rendered
+      
+    onReady:
+      label: onReady
+      comment: Onready event
+      
+    onNewComment:
+      label: onNewComment
+      comment: When a new comment is added
+      
+    preReset:
+      label: preReset
+      comment: Before reset
+      
+    onPaginate:
+      label: onPaginate
+      comment: When pagination is used
+      
+    onIdentify:
+      label: onIdentify
+      comment: On the identified call
+      
+    beforeComment:
+      label: beforeComment
+      comment: Before a comment is posted
+      
